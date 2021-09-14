@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Context } from '../../utils/Store'
+import './Home.css'
 
 const HomePage = () => {
     const [state, setState] = useContext(Context);
@@ -16,7 +17,7 @@ const HomePage = () => {
 
     return (
         <>
-            <p>{state.name}</p>
+            <p className="style">{state.name}</p>
             <p>{state.email}</p>
             <button onClick={handleClick}>Change State</button>
         </>
